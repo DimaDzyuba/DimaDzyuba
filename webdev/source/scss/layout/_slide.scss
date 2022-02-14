@@ -1,0 +1,30 @@
+.slide {
+    background: url(../img/slide_bg.jpg)center/cover no-repeat;
+    padding: 120px 0 300px 0;
+    &__title {
+        width: 85%;
+        margin: 0 auto;
+        h2 {
+            font-size: 60px;
+            display: inline;
+            line-height: 88px;
+            background: #ffea00;
+            padding: 0 13px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__subtitle {
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 10px;
+        p {
+            padding: 0 4px;
+            font-size: 24px;
+            display: inline;
+            background: #414146;
+            color: #ffffff;
+            line-height: 35px;
+        }
+    }
+}

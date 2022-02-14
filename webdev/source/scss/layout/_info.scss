@@ -1,0 +1,270 @@
+.info {
+    padding: 30px 0;
+    background: #414146;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -5px;
+    }
+
+    &__about-us {
+        padding: 0 5px;
+    }
+
+    &__tweets {
+        padding: 0 5px;
+    }
+
+    &__contacts {
+        padding: 0 5px;
+    }
+    @media(max-width:1500px) {
+        &__block {
+            justify-content: space-around;
+        }
+    }
+    @media(max-width:850px) {
+        &__block {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.about-us {
+
+    &__row {
+    }
+
+    &__title {
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-size: 13px;
+        color: #ffffff;
+        max-width: 400px;
+        line-height: 20px;
+        margin-bottom: 36px;
+    }
+
+    &__btn {
+    }
+
+    &__items {
+        width: 400px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        img {
+        }
+    }
+    @media(max-width: 500px) {
+        display: none;
+    }
+}
+
+.title-stream {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 58px;
+    &__link {
+        font-size: 15px;
+        padding: 12px 19px;
+        background: #000000;
+        color: #ffffff;
+        &:hover {
+            border-bottom: 2px solid #ffea00;
+            background: rgba(0,0,0,0.5);
+        }
+    }
+}
+
+
+
+
+.info {
+
+    &__tweets {
+    }
+}
+.tweets {
+
+    &__title {
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        li {
+        position: relative;
+        font-size: 13px;
+        line-height: 21px;
+        color: #ffffff;
+        margin-bottom: 50px;
+        padding: 0 0 0 45px;
+        }
+        li:last-child {
+            margin: 0 0 60px 0;
+        }
+        span {
+            color: #e6d309;
+        }
+        li:before {
+            content: '';
+            position: absolute;
+            background: url(../img/tweet-icon.png)left no-repeat;
+            display: inline-block;
+            width: 26px;
+            height: 22px;
+            top: 10px;
+            left: 0;
+        }
+        li:after {
+            content: '3 days ago';
+            position: absolute;
+            display: block;
+            top: 45px;
+            color: #e6d309;
+            font-size: 8px;
+        }
+    }
+
+    &__social {
+    }
+    @media(max-width:1500px) {
+        display: none;
+    }
+}
+.social {
+    display: flex;
+    align-items: center;
+    &__title {
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin: 0 10px 0 0;
+    }
+
+    &__list {
+        display: flex;
+        li {
+            margin: 0 2px 0 0;
+        }
+        li:last-child {
+            margin: 0 0 0 0;
+        }
+
+    }
+
+    &__link {
+    }
+}
+
+
+.contacts {
+
+    &__title {
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin: 0 0 50px 0;
+    }
+
+    &__row {
+    }
+    &__column {
+        display: flex;
+        margin: 0 0 32px 0;
+    }
+    &__column:last-child {
+        margin: 0 0 48px 0;
+    }
+
+    &__image {
+        margin: 0 16px 0 0;
+    }
+
+    &__text {
+        padding: 5px 0 0 0;
+        color: #ffffff;
+        font-size: 13px;
+        line-height: 21px;
+        max-width: 300px;
+        position: relative;
+    }
+
+    &__number {
+        position: absolute;
+        width: 130px;
+        top: 5px;
+        left: 50px;
+        span {
+            display: block;
+        }
+    }
+
+    &__yellow {
+        color: #e6d309;
+    }
+    @media(max-width:850px) {
+        margin: 0 54px 0 0;
+        &__title {
+            margin: 30px 0 50px 0;
+        }
+    }
+    @media(max-width: 500px) {
+        padding: 0 0 0 50px;
+    }
+}
+
+.follow {
+
+    &__title {
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        color: #ffffff;
+        font-size: 13px;
+        line-height: 21px;
+        max-width: 330px;
+        margin: 0 0 18px 0;
+    }
+
+    &__form {
+        position: relative;
+    }
+    &__text-input {
+        border:none;
+        border-bottom: 2px solid #ffea00;
+        background:none;
+        outline:none;
+        font-size: 16px;
+        padding: 0 0 0 4px;
+        color: #ffffff;
+    }
+
+    &__submit {
+        border:none;
+        outline:none;
+        padding: 0;
+        font-size: 0;
+        cursor: pointer;
+        width: 28px;
+        height: 28px;
+        position:absolute;
+        background: url(../img/submit-icon.png)no-repeat;
+    }
+}
+

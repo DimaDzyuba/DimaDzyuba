@@ -1,0 +1,51 @@
+.portfolio {
+    background: #f6f6f6;
+    text-align: center;
+    img, video{
+        max-width: 100%;
+        height: auto;
+    }
+    &__title {
+        margin: 0 0 30px 0;
+    }
+
+    &__paragraph {
+        font-size: 16px;
+        color: #424146;
+        line-height: 21px;
+        margin: 0 0 25px 0;
+    }
+
+    &__toggles {
+        margin: 0 0 10px 0;
+        button {
+            color: #424146;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0 5px;
+            background: transparent;
+        }
+
+        span:after {
+            content: ' / ';
+        }
+    }
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0 -10px;
+
+    @media (max-width: 1000px) {
+        grid-template-columns: auto auto;
+    }
+    @media (max-width: 600px) {
+        grid-template-columns: auto;
+    }
+}
+
+.post {
+    padding: 0 10px;
+    margin: 0 0 10px 0;
+}

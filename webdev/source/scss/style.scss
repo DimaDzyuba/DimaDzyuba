@@ -1,0 +1,39 @@
+//<ШРИФТЫ>
+//<ПОДКЛЮЧАЕМЫЕ ШРИФТЫ>
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+//</ПОДКЛЮЧАЕМЫЕ ШРИФТЫ>
+
+@import "vendors/normalize";
+@import "vendors/slick-slider";
+
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+//<ОБОЛОЧКА>
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+//</ОБОЛОЧКА>
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@import "layout/header", "layout/slide", "layout/specialize", "layout/portfolio", "layout/slider", "layout/info", "layout/footer";
+
+.title {
+    display: inline-block;
+    text-align: center;
+    background: #424147;
+    color: #ffea00;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    width: 160px;
+    height: 30px;
+}

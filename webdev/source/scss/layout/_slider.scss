@@ -1,0 +1,26 @@
+.slider {
+    background: #f6f6f6;
+    text-align: center;
+    padding: 25px 0 90px 0;
+    &__title {
+        margin: 0 0 30px 0;
+    }
+
+    &__paragraph {
+        font-size: 16px;
+        color: #424146;
+        line-height: 21px;
+        margin: 0 0 25px 0;
+    }
+    @media(max-width:1000px){
+        padding: 10px 0 30px 0;
+        &__title {
+            margin: 0 0 15px 0;
+        }
+    }
+}
+.owl_carousel__item {
+    margin: 0 auto;
+    width: 130px;
+    height: 60px;
+}
