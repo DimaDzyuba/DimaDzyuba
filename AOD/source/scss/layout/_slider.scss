@@ -1,0 +1,82 @@
+.slider {
+    background-color: #f7f7f7;
+    padding: 120px 0 60px 0;
+    &__body {
+        position: relative;
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            text-align: center;
+            padding: 50px 0 0 0;
+            li {
+                list-style: none;
+                position: relative;
+                margin: 0 5px;
+                cursor: pointer;
+                width: 10px;
+                height: 10px;
+                button {
+                    background: transparent;
+                    display: block;
+                    line-height: 0;
+                    font-size: 0;
+                    padding: 5px;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    border: 1px #a9afb3 solid;
+                    &:before {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        content: '';
+                        width: 10px;
+                        height: 10px;
+                        border: 1px #a9afb3 solid;
+                        border-radius: 50%;
+                    }
+                }
+                &.slick-active button:before {
+                    background: #a9afb3;
+                }
+            }
+        }
+    }
+    @media (max-width:1500px) {
+        padding: 60px 0 30px 0;
+    }
+    @media (max-width:1100px) {
+        padding: 20px 0 20px 0;
+        &__body {
+            .slick-dots {
+                padding: 20px 0 0 0;
+            }
+        }
+    }
+
+    &__icon {
+        text-align: center;
+        margin: 0 0 35px 0;
+    }
+
+    &__title {
+        text-align: center;
+        margin: 0 0 20px 0;
+        font-size: 18px;
+        color: rgb(53, 55, 56);
+        font-weight: bold;
+        span {
+            color: #848789;
+            font-weight: 300;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 24px;
+        color: rgb(132, 135, 137);
+        font-style: italic;
+        line-height: 34px;
+        text-align: center;
+    }
+}
